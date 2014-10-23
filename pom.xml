@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>prefuse</groupId>
+	<artifactId>prefuse</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>Prefuse</name>
+	<description>Prefuse is a set of software tools for creating rich interactive data visualizations in the Java programming language. Prefuse supports a rich set of features for data modeling, visualization, and interaction. It provides optimized data structures for tables, graphs, and trees, a host of layout and visual encoding techniques, and support for animation, dynamic queries, integrated search, and database connectivity.</description>
+	<url>https://github.com/prefuse/Prefuse</url>
+	
+	<scm>
+		<url>https://github.com/prefuse/Prefuse</url>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>lucene</groupId>
+			<artifactId>lucene</artifactId>
+			<version>1.4.3</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>test</testSourceDirectory>
+		<resources>
+			<resource>
+				<directory>data</directory>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
