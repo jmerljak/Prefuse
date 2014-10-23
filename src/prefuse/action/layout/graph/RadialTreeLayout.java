@@ -124,14 +124,18 @@ public class RadialTreeLayout extends TreeLayout {
      * @see prefuse.action.Action#run(double)
      */
     public void run(double frac) {
-        Graph g = (Graph)m_vis.getGroup(m_group);
+        Graph g = (Graph) m_vis.getGroup(m_group);
+        if (g == null) {
+        	return;
+        }
+
         initSchema(g.getNodes());
         
         m_origin = getLayoutAnchor();
         NodeItem n = getLayoutRoot();
         Params np = (Params)n.get(PARAMS);
 
-	g.getSpanningTree(n);
+        g.getSpanningTree(n);
         
         // calc relative widths and maximum tree depth
         // performs one pass over the tree
