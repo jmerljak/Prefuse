@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>external.prefuse</groupId>
 	<artifactId>prefuse</artifactId>
-	<version>2014-SNAPSHOT</version>
+	<version>2014.10.27</version>
 
 	<name>Prefuse</name>
 	<description>Prefuse is a set of software tools for creating rich interactive data visualizations in the Java programming language. Prefuse supports a rich set of features for data modeling, visualization, and interaction. It provides optimized data structures for tables, graphs, and trees, a host of layout and visual encoding techniques, and support for animation, dynamic queries, integrated search, and database connectivity.</description>
